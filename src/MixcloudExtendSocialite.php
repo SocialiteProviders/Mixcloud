@@ -1,4 +1,5 @@
 <?php
+
 namespace SocialiteProviders\Mixcloud;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;

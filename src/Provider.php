@@ -1,4 +1,5 @@
 <?php
+
 namespace SocialiteProviders\Mixcloud;
 
 use Laravel\Socialite\Two\AbstractProvider;
@@ -34,7 +35,7 @@ class Provider extends AbstractProvider implements ProviderInterface
             'https://api.mixcloud.com/me/?access_token='.$token
         );
 
-        return json_decode($response->getBody(), true);
+        return json_decode($response->getBody()->getContents(), true);
     }
 
     /**
